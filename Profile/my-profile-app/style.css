@@ -1,0 +1,197 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: white; /* White base theme */
+  color: #333; /* Dark text color for contrast */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 a {
+  font-family: 'Poppins', sans-serif; /* Bold, Distinct font */
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #007bff;
+  text-decoration: none;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem; /* Spacing between buttons */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+header nav ul li a {
+  font-family: 'Roboto', sans-serif; /* Clean, modern font for sections */
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+  color: #007bff; /* Highlight color */
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+main section {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+section:nth-child(even) {
+  background-color: #eaeaea;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Style for the toggle button */
+#toggleDarkMode {
+  background: none; 
+  border: none; 
+  cursor: pointer; 
+  color: inherit;
+  font-size: 1.5em; 
+  margin-left: 210px; 
+  padding: 0; 
+}
+
+#toggleDarkMode:hover {
+  color: #bbb;
+}
+
+nav ul li:last-child {
+  margin-right: 0; 
+}
+
+/* About Me Section */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 2rem; /* Increase padding for more spacing */
+  min-height: 100vh; /* Full height for the section */
+  background: linear-gradient(to right, #ffffff, #e6efff); /* Light gradient background */
+  position: relative; /* For positioning child elements */
+}
+
+.about-text {
+  max-width: 600px; /* Limit text width */
+  color: #2c2c2c; /* Dark color for contrast */
+}
+
+.hello {
+  font-family: 'Comic Sans MS', cursive; /* Casual font */
+  font-size: 3rem; /* Larger Hello text */
+  opacity: 0; /* Start invisible for animation */
+  animation: fadeIn 0.8s forwards; /* Fade in effect */
+  transition: opacity 0.5s ease-in-out;
+  margin-bottom: 0.5rem; /* Spacing below Hello */
+}
+
+.my-name, .name {
+  font-family: 'Source Sans Pro'; /* Casual font */
+  font-size: 3.5rem; /* Larger font for name */
+  color: black; /* Color for the name */
+  margin: 0.5rem 0; /* Spacing between lines */
+}
+
+.name {
+  font-size: 4rem;
+  font-weight:lighter;
+  color: #1060d7; /* Red color for the name */
+}
+
+.introduction {
+  font-size: 2.2rem; /* Introduction size */
+  margin: 1.5rem 0; /* Spacing */
+  color: #555; /* Grey color for additional info */
+}
+
+.additional-info {
+  font-size: 1.6rem; /* Slightly larger than introduction */
+  margin-top: 1rem; /* Spacing */
+  color: #2c2c2c; /* Keep dark text for contrast */
+}
+
+/* Typewriter effect styles */
+.typewriter {
+  font-family: 'Poppins', sans-serif; /* Casual font with weight */
+  font-weight: 600; /* Bold weight for typewriter effect */
+  font-size: 2.2rem; /* Adjusted font size for better spacing */
+  color: rgb(165, 105, 233); /* Color for the typewriter text */
+  display: inline-block; /* Allows the animation to work correctly */
+  border-right: 2px solid; /* Cursor effect */
+  white-space: nowrap; /* Prevent wrapping */
+  overflow: hidden; /* Hide overflowing content */
+  animation: blink 0.75s step-end infinite; /* Blinking cursor effect */
+  margin-bottom: -6.5px;
+  margin-left: 5px; /* Add space between "I’m a" and typewriter */
+}
+
+/* Adjust the container for "I’m a" */
+.introduction-container {
+  display: flex;
+  align-items: center; /* Align "I’m a" with the typewriter */
+}
+
+.introduction-text {
+  font-family: 'Comic Sans MS', cursive; /* Casual font */
+  font-size: 2rem; /* Unified size for all role texts */
+  margin-right: 10px; /* Space between "I’m a" and typewriter */
+  color: #2c2c2c; /* Dark color for contrast */
+}
+
+/* 3D Model Container */
+.about-3d-model {
+  width: 500px; /* Set width for 3D model */
+  height: 500px; /* Set height for 3D model */
+  background-color: #ddd; /* Placeholder background */
+  border-radius: 20px; /* Rounded corners for model container */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  to {
+      opacity: 1; /* Fade in to full opacity */
+  }
+}
+
+@keyframes blink {
+  50% {
+      border-color: transparent; /* Blink effect */
+  }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Profile Web App</title>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+
+        <!-- Link to your CSS file -->
+        <link rel="stylesheet" href="./style.css">
+        
+    </head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1><a href="#" id="refreshPage">Daksh</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#about" class="nav-link" id="aboutLink">About Me</a></li>
+                <li><a href="#projects" class="nav-link" id="projectsLink">Projects</a></li>
+                <li><a href="#skills" class="nav-link" id="skillsLink">Skills</a></li>
+                <li><a href="#contact" class="nav-link" id="contactLink">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="toggleDarkMode">
+            <i class="fas fa-moon"></i> 
+        </button>
+    </header>
+    
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="about-text">
+                <div class="hello">Hello!</div>
+                <div class="my-name">My name is</div>
+                <div class="name">Daksh Shah</div>
+                <div class="introduction-container">
+                    <div class="introduction-text">I'm a</div>
+                    <div id="typewriter" class="typewriter"></div>
+                </div>
+                <div class="additional-info">Designing Experiences that Engage and Inspire.</div>
+            </div>
+            <div class="about-3d-model">
+                <model-viewer 
+                    src="path/to/your/model.glb" 
+                    alt="A 3D model"
+                    auto-rotate 
+                    camera-controls 
+                    style="width: 100%; height: 100%;">
+                </model-viewer>
+            </div>
+            
+        </section>
+        
+
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>This is the Projects section.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>This is the Skills section.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>This is the Contact section.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Profile Web App</p>
+    </footer>
+
+    <!-- Link to your main JavaScript file -->
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

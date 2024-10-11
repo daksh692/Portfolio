@@ -1,0 +1,54 @@
+/* Dark Mode Styles */
+body {
+    background-color: #121212; /* Dark background */
+    color: #f0f0f0; /* Light text */
+}
+
+header {
+    background-color: #1f1f1f; /* Dark header */
+    color: rgb(255, 255, 255);
+}
+
+header nav ul li a {
+    color: #f0f0f0; /* White text for navigation links */
+}
+
+footer {
+    background-color: #1f1f1f; /* Dark footer */
+    color: #f0f0f0;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    color: rgb(255, 189, 57); /* Highlight for active/hovered links */
+}
+
+/* About Section Styles */
+.about-section {
+    background: linear-gradient(to right, #1f1f1f, #3a3a3a); 
+    background:#000000 ;/* Dark gradient background */
+}
+
+.about-text {
+    color: #f0f0f0; /* Light text for the about section */
+}
+
+.hello,
+.my-name,
+.name,
+.introduction,
+.additional-info,
+.introduction-text,
+.typewriter {
+    color: #f0f0f0; /* Light color for all relevant sections */
+}
+
+.typewriter {
+    color: #ffa726; /* Different color for typewriter effect in dark mode */
+}
+
+/* 3D Model Container in Dark Mode */
+.about-3d-model {
+    background-color: #555; /* Darker background for model */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Darker shadow effect */
+}
